@@ -1,0 +1,154 @@
+ /* Базовые стили */
+ * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+
+canvas {
+	border: 1px solid #ccc;
+	margin: 10px;
+	cursor: crosshair;
+}
+
+button,
+input[type="text"] {
+	padding: 10px;
+	margin: 10px;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+#coordinates {
+	margin: 10px;
+	color: blue;
+}
+
+/* User */
+
+
+/* Стили формы */
+#loginForm {
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	padding: 40px;
+	width: 100%;
+	max-width: 450px;
+	transition: all 0.3s ease;
+}
+
+#loginForm:hover {
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+#loginForm h2 {
+	color: #2c3e50;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+/* Стили для полей ввода */
+.input-group {
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.input-group label {
+	display: block;
+	margin-bottom: 8px;
+	color: #34495e;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.input-group input {
+	width: 90%;
+	
+	padding: 15px;
+	border: 2px solid #ecf0f1;
+	border-radius: 8px;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+
+.input-group input:focus {
+	border-color: #667eea;
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+	height: 30px;
+}
+
+/* Стили кнопки */
+button[type="submit"] {
+	width: 100%;
+	padding: 15px;
+	background: linear-gradient(to right, #667eea, #764ba2);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s;
+	margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+	background: linear-gradient(to right, #5a6fd1, #6a4295);
+	transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+	transform: translateY(0);
+}
+
+/* Стили сообщения об ошибке */
+#errorMsg {
+	color: #e74c3c;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	padding: 10px;
+	border-radius: 6px;
+	background-color: #fadbd8;
+	display: none;
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+	#loginForm {
+			padding: 30px 20px;
+	}
+	
+	#loginForm h2 {
+			font-size: 24px;
+	}
+	
+	.input-group input {
+			padding: 12px;
+	}
+	
+	button[type="submit"] {
+			padding: 12px;
+	}
+}

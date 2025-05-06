@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавление даты и QR-кода в JPG</title>
+		<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="css/stayle.css">
+</head>
+<body>
+    <h3>Загрузите JPG файл (list_1.jpg)</h3>
+    <div>
+        <button id="downloadJpgButton" style="display: none;">Скачать JPG</button>
+        <button id="downloadPdfButton" style="display: none;">Скачать PDF</button>
+    </div>
+    <input type="file" id="imageInput" accept="image/jpeg">
+    <div>
+        <h4>Введите дату (например, 05.05.2025):</h4>
+        <input type="text" id="dateInput" placeholder="ДД.ММ.ГГГГ">
+        <button id="updateButton">Обновить изображение</button>
+    </div>
+    <div id="coordinates">Координаты для даты: (кликните на изображение до 6 раз)</div>
+    <div>
+        <h4>Предпросмотр:</h4>
+        <canvas id="canvas" style="display: none;"></canvas>
+				<div id="qr-container" style="display: none;"></div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

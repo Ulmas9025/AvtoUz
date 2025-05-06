@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<link rel="stylesheet" href="css/stayle.css">
+	<title>QR Generator - Авторизация</title>
+</head>
+<body>
+	<form id="loginForm">
+		<h2>Авторизация</h2>
+		<div class="input-group">
+				<label for="login">Логин:</label>
+				<input type="text" id="login" required placeholder="Введите ваш логин">
+		</div>
+		<div class="input-group">
+				<label for="password">Пароль:</label>
+				<input type="password" id="password" required placeholder="Введите ваш пароль">
+		</div>
+		<button type="submit">Войти</button>
+		<div id="errorMsg"></div>
+</form>
+
+	<script src="js/user.js"></script>
+</body>
+</html>
